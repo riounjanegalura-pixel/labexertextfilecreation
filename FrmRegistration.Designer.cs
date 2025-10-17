@@ -39,6 +39,15 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.txtStudentNo = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.txtMiddleInitial = new System.Windows.Forms.TextBox();
+            this.txtAge = new System.Windows.Forms.TextBox();
+            this.txtContactNo = new System.Windows.Forms.TextBox();
+            this.cmbProgram = new System.Windows.Forms.ComboBox();
+            this.cmbGender = new System.Windows.Forms.ComboBox();
+            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -150,12 +159,87 @@
             this.button1.TabIndex = 10;
             this.button1.Text = "Register";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // txtStudentNo
+            // 
+            this.txtStudentNo.Location = new System.Drawing.Point(163, 115);
+            this.txtStudentNo.Name = "txtStudentNo";
+            this.txtStudentNo.Size = new System.Drawing.Size(205, 22);
+            this.txtStudentNo.TabIndex = 11;
+            // 
+            // txtLastName
+            // 
+            this.txtLastName.Location = new System.Drawing.Point(163, 182);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(205, 22);
+            this.txtLastName.TabIndex = 12;
+            // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(472, 180);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(177, 22);
+            this.txtFirstName.TabIndex = 13;
+            // 
+            // txtMiddleInitial
+            // 
+            this.txtMiddleInitial.Location = new System.Drawing.Point(696, 182);
+            this.txtMiddleInitial.Name = "txtMiddleInitial";
+            this.txtMiddleInitial.Size = new System.Drawing.Size(100, 22);
+            this.txtMiddleInitial.TabIndex = 14;
+            // 
+            // txtAge
+            // 
+            this.txtAge.Location = new System.Drawing.Point(163, 261);
+            this.txtAge.Name = "txtAge";
+            this.txtAge.Size = new System.Drawing.Size(100, 22);
+            this.txtAge.TabIndex = 15;
+            // 
+            // txtContactNo
+            // 
+            this.txtContactNo.Location = new System.Drawing.Point(477, 337);
+            this.txtContactNo.Name = "txtContactNo";
+            this.txtContactNo.Size = new System.Drawing.Size(172, 22);
+            this.txtContactNo.TabIndex = 16;
+            // 
+            // cmbProgram
+            // 
+            this.cmbProgram.FormattingEnabled = true;
+            this.cmbProgram.Location = new System.Drawing.Point(472, 113);
+            this.cmbProgram.Name = "cmbProgram";
+            this.cmbProgram.Size = new System.Drawing.Size(218, 24);
+            this.cmbProgram.TabIndex = 17;
+            // 
+            // cmbGender
+            // 
+            this.cmbGender.FormattingEnabled = true;
+            this.cmbGender.Location = new System.Drawing.Point(472, 259);
+            this.cmbGender.Name = "cmbGender";
+            this.cmbGender.Size = new System.Drawing.Size(177, 24);
+            this.cmbGender.TabIndex = 18;
+            // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.Location = new System.Drawing.Point(163, 335);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(200, 22);
+            this.dtpBirthday.TabIndex = 19;
             // 
             // FrmRegistration
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dtpBirthday);
+            this.Controls.Add(this.cmbGender);
+            this.Controls.Add(this.cmbProgram);
+            this.Controls.Add(this.txtContactNo);
+            this.Controls.Add(this.txtAge);
+            this.Controls.Add(this.txtMiddleInitial);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.txtLastName);
+            this.Controls.Add(this.txtStudentNo);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.label9);
@@ -187,5 +271,14 @@
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.TextBox txtStudentNo;
+        private System.Windows.Forms.TextBox txtLastName;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.TextBox txtMiddleInitial;
+        private System.Windows.Forms.TextBox txtAge;
+        private System.Windows.Forms.TextBox txtContactNo;
+        private System.Windows.Forms.ComboBox cmbProgram;
+        private System.Windows.Forms.ComboBox cmbGender;
+        private System.Windows.Forms.DateTimePicker dtpBirthday;
     }
 }
