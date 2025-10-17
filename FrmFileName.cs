@@ -12,9 +12,18 @@ namespace labexertextfilecreation
 {
     public partial class FrmFileName: Form
     {
+        public static string SetFileName = "";
         public FrmFileName()
         {
             InitializeComponent();
+        }
+
+        private void btnOkay_Click(object sender, EventArgs e)
+        {
+            FrmFileName.SetFileName = txtFileName.Text + ".txt";
+
+            this.DialogResult = DialogResult.OK;
+            this.Close();
         }
     }
 }
